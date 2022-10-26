@@ -1,0 +1,77 @@
+{
+    "name": "worksome/laravel-ip-geolocation",
+    "description": "A driver-based package to handle IP geolocation for Laravel",
+    "keywords": [
+        "worksome",
+        "laravel",
+        "ip-geolocation"
+    ],
+    "homepage": "https://github.com/worksome/laravel-ip-geolocation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Owen Voke",
+            "email": "owen.voke@worksome.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.5",
+        "laravel/framework": "^9.22",
+        "spatie/laravel-package-tools": "^1.12.1"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.3",
+        "nunomaduro/larastan": "^2.0",
+        "orchestra/testbench": "^7.8",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-parallel": "^1.2",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "spatie/laravel-ray": "^1.30",
+        "worksome/pest-plugin-silence": "^0.1.1",
+        "worksome/coding-style": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Worksome\\IpGeolocation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Worksome\\IpGeolocation\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/ecs --fix",
+        "test:unit": "vendor/bin/pest -p",
+        "test:coverage": "vendor/bin/pest -p --coverage",
+        "test:types": "vendor/bin/phpstan analyse",
+        "test:style": "vendor/bin/ecs",
+        "test": [
+            "@test:style",
+            "@test:types",
+            "@test:unit"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "worksome/coding-style": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Worksome\\IpGeolocation\\IpGeolocationServiceProvider"
+            ],
+            "aliases": {
+                "IpGeolocation": "Worksome\\IpGeolocation\\Facades\\IpGeolocation"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

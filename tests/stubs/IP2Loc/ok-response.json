@@ -1,0 +1,40 @@
+{
+    "connection": {
+        "ip": "2606:4700:4700::1111",
+        "ip_version": "6"
+    },
+    "currency": {
+        "code": [
+            "USD",
+            "USN",
+            "USS"
+        ]
+    },
+    "location": {
+        "capital": "Washington D.C.",
+        "city": null,
+        "continent": {
+            "code": "NA",
+            "name": "North America"
+        },
+        "country": {
+            "alpha_2": "US",
+            "alpha_3": "USA",
+            "dialing_code": [
+                "1"
+            ],
+            "emoji": "🇺🇸",
+            "eu_member": false,
+            "name": "United States",
+            "subdivision": null,
+            "subdivision_id": null,
+            "zip_code": null
+        },
+        "latitude": 37.751,
+        "longitude": -97.822
+    },
+    "success": true,
+    "time": {
+        "zone": "America/Chicago"
+    }
+}
