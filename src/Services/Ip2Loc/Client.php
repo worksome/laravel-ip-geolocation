@@ -6,8 +6,6 @@ namespace Worksome\IpGeolocation\Services\Ip2Loc;
 
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
-use Illuminate\Support\Arr;
-use Worksome\IpGeolocation\DataValues\Location;
 
 class Client
 {
@@ -22,7 +20,7 @@ class Client
     public function location(string $ipAddress): array|null
     {
         // @phpstan-ignore-next-line
-        return $this->client()->get(self::BASE_URL."/{$this->token}/{$ipAddress}")->throw()->json('location');
+        return $this->client()->get(self::BASE_URL . "/{$this->token}/{$ipAddress}")->throw()->json('location');
     }
 
     private function client(): PendingRequest

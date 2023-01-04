@@ -13,7 +13,7 @@ use Worksome\IpGeolocation\Drivers\NullDriver;
 use Worksome\IpGeolocation\Services\Ip2Loc\Client;
 
 /**
- * @method Driver driver(string|null $driver = null)
+ * @method Driver   driver(string|null $driver = null)
  * @method Location location(string $ipAddress)
  */
 class IpGeolocation extends Manager
