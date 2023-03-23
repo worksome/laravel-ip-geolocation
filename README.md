@@ -1,8 +1,8 @@
 # Laravel IP Geolocation
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/worksome/laravel-ip-geolocation.svg?style=flat-square)](https://packagist.org/packages/worksome/laravel-ip-geolocation)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/worksome/laravel-ip-geolocation/Tests?style=flat-square&label=tests)](https://github.com/worksome/laravel-ip-geolocation/actions?query=workflow%3ATests+branch%3Amain)
-[![GitHub Static Analysis Action Status](https://img.shields.io/github/workflow/status/worksome/laravel-ip-geolocation/Static%20Analysis?label=static%20analysis&style=flat-square)](https://github.com/worksome/laravel-ip-geolocation/actions?query=workflow%3A"Static%20Analysis"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/worksome/laravel-ip-geolocation/tests.yml?branch=main&style=flat-square&label=tests)](https://github.com/worksome/laravel-ip-geolocation/actions?query=workflow%3ATests+branch%3Amain)
+[![GitHub Static Analysis Action Status](https://img.shields.io/github/actions/workflow/status/worksome/laravel-ip-geolocation/static.yml?branch=main&label=static%20analysis&style=flat-square)](https://github.com/worksome/laravel-ip-geolocation/actions?query=workflow%3A"Static%20Analysis"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/worksome/laravel-ip-geolocation.svg?style=flat-square)](https://packagist.org/packages/worksome/laravel-ip-geolocation)
 
 A driver-based package to handle IP geolocation for Laravel
