@@ -13,7 +13,7 @@ it('can retrieve the location with the IP2Loc driver', function () {
     $factory->fake([
         '/aaaabbbbccccddddeeeeffff1111/2606:4700:4700::1111' => json_decode((string) file_get_contents(
             getResponseStubFilePath('IP2Loc/ok-response.json')
-        ), true)
+        ), true),
     ]);
 
     $client = new Client($factory, 'aaaabbbbccccddddeeeeffff1111');
