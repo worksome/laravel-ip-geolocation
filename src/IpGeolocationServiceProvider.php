@@ -36,7 +36,7 @@ class IpGeolocationServiceProvider extends PackageServiceProvider
         $driver = config('ip-geolocation.default');
 
         AboutCommand::add(
-            'Multi-Factor Authentication (MFA)',
+            'IP Geolocation',
             fn () => [
                 'Driver' => $driver ?? 'null',
             ]

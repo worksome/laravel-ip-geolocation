@@ -19,7 +19,7 @@ return [
         /**
          * Laravel's about command provides useful information regarding the state of
          * your Laravel application. If `about_command` is set to true, we will show
-         * useful information about IP Geolocation  in about command output.
+         * useful information about IP Geolocation in about command output.
          */
         'about_command' => true,
 
